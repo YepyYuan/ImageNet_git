@@ -89,6 +89,8 @@ def train_model(model, train_dataloader, test_dataloader, optimizer, criterion, 
             best_model_weights = model.state_dict()
             torch.save(best_model_weights, model_save_path + '/best_model.pth')
 
+            best_test_acc = test_acc
+
 
         writer.add_scalars('loss', {'train': train_loss_avg, 'test':test_loss} , epoch)
         writer.add_scalars('acc', {'train': train_acc, 'test':test_acc}, epoch)
