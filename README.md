@@ -33,4 +33,4 @@ file tree
 
 `inference.py`: Code for inference
 
-`main.py`: Implemention for the whole progress
+`main.ipynb`: Implemention for the whole progress (written in Jupyter Notebook)
